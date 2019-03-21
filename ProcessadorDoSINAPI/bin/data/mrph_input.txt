@@ -1,0 +1,6 @@
+cor: amarelo, azul, vermelho
+forma: círculo, quadrado, triangulo
+peso: pesado, leve
+duração: curto, longo
+textura: áspero, macio, rugoso
+velocidade: 10km/h, 20km/h, 30km/h
