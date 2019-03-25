@@ -27,16 +27,11 @@ public class SINAPIProcessing {
 
 	public static void main(String[] args) {
 
-		Vector<SINAPIEntry> preProcessed = new Vector<>();
-		Vector<SINAPIEntry> posProcessed = new Vector<>();
-
-
 		Map<String, SINAPIEntry> firstRoundServicesEntries = new LinkedHashMap<>();
 
 		try {
 			FileWriter fileWriter = new FileWriter("output.txt");
 			PrintWriter printWriter = new PrintWriter(fileWriter);
-			printWriter.println("Source,Target,Weight,Label");
 
 			FileInputStream excelFile = new FileInputStream(new File(FILE_NAME));
 			Workbook workbook = WorkbookFactory.create(excelFile);
